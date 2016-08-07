@@ -75,7 +75,7 @@ launch_km <- function(){
                                column(1),
                                column(10,
                                       fluidRow(
-                                        column(6,fluidRow(align = "right", HTML('Either the number of clusters, say <em>k</em>, or a set of initial cluster centers(separated by blank).'))),
+                                        column(6,fluidRow(align = "right", HTML('Number of clusters, <em>k</em>'))),
                                         column(6,fluidRow(align = "left", textInput("centers", "", value = 3,placeholder = "3")))
                                       ),
                                       fluidRow(
