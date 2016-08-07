@@ -1,0 +1,4 @@
+Name: K-means model build and diagnostics
+Description: Build and k-means clustering model and check the model validity measures.
+Binding: launch_km
+Interactive: true

@@ -1,0 +1,14 @@
+Package: statModelAddins
+Title: R Studio Addins for statistical Modelling
+Version: 0.1.0
+Authors@R: person("Sailalith", "Sarupuri", email = "sarupurisailalith@gmail.com", role = c("aut", "cre"))
+Description: This package is a list of R Studio Addins for statistical modelling and diagnostics
+Depends: R (>= 3.1.0)
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Imports:
+    shiny (>= 0.13),
+    miniUI (>= 0.1.1)
+    clValid
+    plotly (>= 3.6.0)
