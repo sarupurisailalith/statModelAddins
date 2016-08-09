@@ -10,12 +10,12 @@ launch_km <- function(){
   ui <- miniPage(
     gadgetTitleBar("K-means clustering model and diagnostics"),
     miniTabstripPanel(selected = "Model building",
-                      miniTabPanel("Model building",
+                      miniTabPanel("Model building",icon = icon("sliders"),
                                    miniContentPanel(scrollable = TRUE,
                                                     fluidRow(align = "center",
                                                       HTML("<br>If the k-means model object is already avaialble in the global environment,
                                                            <br>head over to the next panel for model diagnostics<br>
-                                                           <em>Load the input data and select the variables for model diagnostics as well</em><br><br>"),
+                                                           <em><b><font color = 'red'>The two inputs below (data and vars) are mandatory</font></b></em><br><br>"),
                                                       fluidRow(column(2),
                                                         column(4,
                                                                selectizeInput("data","Select the input data frame or matrix",
@@ -29,7 +29,7 @@ launch_km <- function(){
                                                     )
                                                     )
                                    ),
-                      miniTabPanel("Model diagnostics",
+                      miniTabPanel("Model diagnostics",icon = icon("gears"),
                                    miniContentPanel(scrollable = TRUE,
                                                     fluidRow(
                                                       fluidRow(align = "center",
